@@ -14,23 +14,40 @@
 
 	<meta name="description" content="The development & modding division of 3rd Shock Army." />
 
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://3sa-research-development-unit.github.io/" />
-	<meta property="og:title" content="3rd Shock Army — RESEARCH & DEVELOPMENT UNIT" />
-	<meta property="og:description" content="The development & modding division of 3rd Shock Army." />
-	<meta property="og:image" content="https://3sa-research-development-unit.github.io/thumbnail.png" />
+	<!-- HTML Meta Tags -->
+	<title>3rd Shock Army — Research & Development Division</title>
+	<meta name="description" content="The development & modding division of 3rd Shock Army." />
 
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://3sa-research-development-unit.github.io/" />
-	<meta property="twitter:title" content="3rd Shock Army — RESEARCH & DEVELOPMENT UNIT" />
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="https://3sa-research-development-unit.github.io/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="3rd Shock Army — Research & Development Division" />
+	<meta property="og:description" content="The development & modding division of 3rd Shock Army." />
 	<meta
-		property="twitter:description"
+		property="og:image"
+		content="https://opengraph.b-cdn.net/production/images/0a3db86f-d3ac-4a98-b3dc-ff23367245e5.png?token=m4UZXhTu1nValtDlzeDA8omxACHcMsjY3-MMKtPW8-g&height=600&width=1200&expires=33292506441"
+	/>
+
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="twitter:domain" content="3sa-research-development-unit.github.io" />
+	<meta property="twitter:url" content="https://3sa-research-development-unit.github.io/" />
+	<meta name="twitter:title" content="3rd Shock Army — Research & Development Division" />
+	<meta
+		name="twitter:description"
 		content="The development & modding division of 3rd Shock Army."
 	/>
-	<meta property="twitter:image" content="https://3sa-research-development-unit.github.io/thumbnail.png" />
-	<link rel="icon" type="image/png" href="https://3sa-research-development-unit.github.io/red_star.png" />
+	<meta
+		name="twitter:image"
+		content="https://opengraph.b-cdn.net/production/images/0a3db86f-d3ac-4a98-b3dc-ff23367245e5.png?token=m4UZXhTu1nValtDlzeDA8omxACHcMsjY3-MMKtPW8-g&height=600&width=1200&expires=33292506441"
+	/>
+
+	<!-- Meta Tags Generated via https://www.opengraph.xyz -->
+	<link
+		rel="icon"
+		type="image/png"
+		href="https://3sa-research-development-unit.github.io/red_star.png"
+	/>
 </svelte:head>
 
 <nav
