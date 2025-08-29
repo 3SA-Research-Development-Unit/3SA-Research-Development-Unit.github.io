@@ -1,6 +1,7 @@
 # 3rd Shock Army Website  
+![Welcome](https://github.com/user-attachments/assets/b2d5f327-721e-4036-bdff-c93bea2285d4)
 
-Welcome! 👋  
+## Welcome! 👋
 
 This is the repository for the **3rd Shock Army website**. From here, you can:  
 - ✍️ Write **Guides**  
