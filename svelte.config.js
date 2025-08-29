@@ -9,10 +9,14 @@ const config = {
 	preprocess: [vitePreprocess(), mdsvex({
 		layout: {
 			news: "src/lib/layouts_svx/newsLayout.svelte",
-	
+
 		}
 	})],
-	kit: { adapter: adapter() },
+	kit: {
+		adapter: adapter(), paths: {
+			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+		}
+	},
 	extensions: ['.svelte', '.svx']
 };
 
