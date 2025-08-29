@@ -19,7 +19,7 @@
 	<meta property="og:url" content="https://3sa-research-development-unit.github.io/" />
 	<meta property="og:title" content="3rd Shock Army — RESEARCH & DEVELOPMENT UNIT" />
 	<meta property="og:description" content="The development & modding division of 3rd Shock Army." />
-	<meta property="og:image" content="/thumbnail.png" />
+	<meta property="og:image" content="https://3sa-research-development-unit.github.io/thumbnail.png" />
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
@@ -29,8 +29,8 @@
 		property="twitter:description"
 		content="The development & modding division of 3rd Shock Army."
 	/>
-	<meta property="twitter:image" content="/thumbnail.png" />
-	<link rel="icon" type="image/png" href="/favicon.png" />
+	<meta property="twitter:image" content="https://3sa-research-development-unit.github.io/thumbnail.png" />
+	<link rel="icon" type="image/png" href="https://3sa-research-development-unit.github.io/red_star.png" />
 </svelte:head>
 
 <nav
