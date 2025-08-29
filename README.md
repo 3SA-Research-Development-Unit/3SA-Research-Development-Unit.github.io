@@ -1,38 +1,87 @@
-# sv
+# Website
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Welcome to the 3rd Shock Army web repository. From this repository you can contribute in adding **Guides, Tools, or writing up interesting Articles related to Arma 3**.
 
-## Creating a project
+## I want to help with the site contents
+If you wish to contribute your own guides, start by "forking" the repository
 
-If you're seeing this, you've probably already done this step. Congrats!
+![alt text](_readme/image.png)
 
-```sh
-# create a new project in the current directory
-npx sv create
+Then, access `/src/routes/`
 
-# create a new project in my-app
-npx sv create my-app
+![alt text](_readme/src.png)
+
+Here you will find several folders called "Projects", "Tools", "Guides" and "News". To add your own content, simply create a new .svx file under the underscore folder inside.
+
+For image additions, go to the bottom of this section.
+### Adding a new "Project"
+Example:
+```
+/src/routes/projects/_projects/MyProject.svx
 ```
 
-## Developing
+Then inside the SVX file, paste the following meta:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```
+---
+title: Project Title
+creator: Author
+type: Addon
+description: Your Description
+workshop_link: none
+github_link: none
+dedicated_page: none
+layout: false
+thumbnail: /your_image.png
+---
+```
+Note - Type has to be either; 'Addon', 'Utility Script' or 'Software'
+Example - `type: Addon`
 
-```sh
-npm run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+### Adding a new "Tool"
+Example:
+```
+/src/routes/tools/_tools/MyTool.svx
 ```
 
-## Building
+Then inside the SVX file, paste the following meta:
 
-To create a production version of your app:
+```
+---
+title:
+creator:
+type:
+description:
+image:
+link:
+layout:
+---
+```
+Note - Type has to be either; 'Build Tool', 'Addon', 'Utility' or 'Script'
+Example - `type: Build Tool`
 
-```sh
-npm run build
+### Images
+To add an image, navigate to /static/ and then according to what you're adding, include the image there. 
+
+Allowed formats:
+```
+*.png
+*.jpg
+*.webp
 ```
 
-You can preview the production build with `npm run preview`.
+Example:
+```
+/static/_tools/myTool.png
+```
+## I want to help with the site development.
+```sh
+git clone https://github.com/3SA-Research-Development-Unit/website.git # Clone Repository
+cd website
+npm install # Install Dependencies
+npm run dev # Run Dev
+```
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+
