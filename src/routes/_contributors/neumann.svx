@@ -1,0 +1,5 @@
+---
+name: Neumann
+image: /_contributors/neumann.webp
+role: Management
+---
