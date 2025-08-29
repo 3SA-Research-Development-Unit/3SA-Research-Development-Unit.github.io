@@ -11,5 +11,8 @@ export async function load() {
             };
         })
     );
-    return {contributors};
+    return {
+        contributors
+    };
 }
+

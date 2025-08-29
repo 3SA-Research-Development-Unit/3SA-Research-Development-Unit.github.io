@@ -1,6 +1,5 @@
 <script lang="ts">
 	import '../app.css';
-	import favicon from '$lib/assets/favicon.svg';
 	import { Dropdown, DropdownItem, DropdownDivider, DropdownHeader, Button } from 'flowbite-svelte';
 	let { children } = $props();
 </script>
@@ -12,14 +11,28 @@
 		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
 		rel="stylesheet"
 	/>
+
+	<meta name="description" content="The development & modding division of 3rd Shock Army." />
+
 	<!-- Open Graph / Facebook -->
-	<meta property="og:image" content="/thumbnail.png" />
-	<meta property="og:image:alt" content="3rd Shock Army Thumbnail" />
-	<!-- Twitter Card -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:image" content="/thumbnail.png" />
-	<meta name="twitter:image:alt" content="3rd Shock Army Thumbnail" />
-	 
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://3sa-research-development-unit.github.io/" />
+	<meta property="og:title" content="3rd Shock Army — RESEARCH & DEVELOPMENT UNIT" />
+	<meta property="og:description" content="The development & modding division of 3rd Shock Army." />
+	<meta property="og:image" content="https://your-domain.com/og-image.jpg" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://3sa-research-development-unit.github.io/" />
+	<meta property="twitter:title" content="3rd Shock Army — RESEARCH & DEVELOPMENT UNIT" />
+	<meta
+		property="twitter:description"
+		content="The development & modding division of 3rd Shock Army."
+	/>
+	<meta property="twitter:image" content="/thumbnail.png" />
+
+	<!-- Favicon (optional but recommended) -->
+	<link rel="icon" type="image/png" href="/favicon.png" />
 </svelte:head>
 
 <nav
@@ -58,7 +71,7 @@
 
 {@render children?.()}
 <footer class="bg-[var(--bg-primary)] py-6">
-  <div class="container mx-auto px-6 text-center text-gray-300 text-sm">
-    © 2025 3rd Shock Army. All rights reserved.
-  </div>
+	<div class="container mx-auto px-6 text-center text-sm text-gray-300">
+		© 2025 3rd Shock Army. All rights reserved.
+	</div>
 </footer>
