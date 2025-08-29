@@ -12,6 +12,14 @@
 		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
 		rel="stylesheet"
 	/>
+	<!-- Open Graph / Facebook -->
+	<meta property="og:image" content="/thumbnail.png" />
+	<meta property="og:image:alt" content="3rd Shock Army Thumbnail" />
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="/thumbnail.png" />
+	<meta name="twitter:image:alt" content="3rd Shock Army Thumbnail" />
+	 
 </svelte:head>
 
 <nav

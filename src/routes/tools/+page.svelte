@@ -20,6 +20,13 @@
 	});
 </script>
 
+<svelte:head>
+	<title>3rd Shock Army - Tools</title>
+	<meta
+		name="description"
+		content="Browse community-built software, addons, scripts and other utilities."
+	/>
+</svelte:head>
 <h1 class="text-center text-2xl font-bold">Community Tools</h1>
 <div class="mx-auto mb-3 max-w-[350px] text-center md:max-w-none">
 	Here you can find all sorts of tools developed by the Arma 3 community to enhance your modding
@@ -37,7 +44,7 @@
 
 	<select
 		bind:value={selectedType}
-		class="w-full rounded-lg border border-gray-300 px-4 py-2 md:w-auto text-black"
+		class="w-full rounded-lg border border-gray-300 px-4 py-2 text-black md:w-auto"
 	>
 		{#each types as type}
 			<option class="text-black" value={type}>{type}</option>

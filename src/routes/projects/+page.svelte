@@ -19,6 +19,13 @@
 		return matchesQuery && matchesType;
 	});
 </script>
+<svelte:head>
+    <title>3rd Shock Army - Projects</title>
+    <meta
+        name="description"
+        content="Here you can find all sorts of projects developed by and for 3rd Shock Army to enhanced the development experience or player experience."
+    />
+</svelte:head>
 
 <h1 class="text-center text-2xl font-bold">Projects</h1>
 <div class="mx-auto mb-3 max-w-[350px] text-center md:max-w-none">
