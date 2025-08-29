@@ -1,33 +1,64 @@
-# Website
+# 3rd Shock Army Website  
 
-Welcome to the 3rd Shock Army web repository. From this repository you can contribute in adding **Guides, Tools, or writing up interesting Articles related to Arma 3**.
+Welcome! 👋  
 
-## I want to help with the site contents
-If you wish to contribute your own guides, start by "forking" the repository
+This is the repository for the **3rd Shock Army website**. From here, you can:  
+- ✍️ Write **Guides**  
+- 🛠️ Share **Tools**  
+- 📰 Post **News/Articles** about Arma 3  
 
-![alt text](_readme/image.png)
+You **don’t need to be a programmer** to help. If you can write text or upload images, you can contribute!  
 
-Then, access `/src/routes/`
+---
 
-![alt text](_readme/src.png)
+## 🔰 Contributing Content (Guides, Tools, News)
 
-Here you will find several folders called "Projects", "Tools", "Guides" and "News". To add your own content, simply create a new .svx file under the underscore folder inside.
+### Step 1: Fork the repository  
+On the top-right of this page, click **Fork**.  
+This makes your own copy of the website where you can add content.  
 
-For image additions, go to the bottom of this section.
-### Adding a new "Project"
-Example:
+![Fork example](_readme/image.png)
+
+---
+
+### Step 2: Find the right folder  
+Inside your forked project, go to:  
+
+```
+/src/routes/
+```
+
+Here you’ll see folders:  
+- `projects` → For **Projects** (addons, software, etc.)  
+- `tools` → For **Tools** (scripts, utilities, etc.)  
+- `guides` → For **Guides**  
+- `news` → For **News/Articles**  
+
+![Folder example](_readme/src.png)
+
+---
+
+### Step 3: Add your file  
+Each section has a folder starting with an underscore (`_guides`, `_tools`, etc.).  
+Inside the correct folder, create a **new `.svx` file** (a text file with special formatting).  
+
+Example for a project:  
 ```
 /src/routes/projects/_projects/MyProject.svx
 ```
 
-Then inside the SVX file, paste the following meta:
+---
 
-```
+### Step 4: Add the file details  
+Copy and paste this template into your new `.svx` file, then fill in your info.  
+
+**For Projects:**  
+```yaml
 ---
 title: Project Title
-creator: Author
-type: Addon
-description: Your Description
+creator: Your Name
+type: Addon   # (Options: Addon, Utility Script, Software)
+description: A short description
 workshop_link: none
 github_link: none
 dedicated_page: none
@@ -35,53 +66,44 @@ layout: false
 thumbnail: /your_image.png
 ---
 ```
-Note - Type has to be either; 'Addon', 'Utility Script' or 'Software'
-Example - `type: Addon`
 
-
-### Adding a new "Tool"
-Example:
-```
-/src/routes/tools/_tools/MyTool.svx
-```
-
-Then inside the SVX file, paste the following meta:
-
-```
+**For Tools:**  
+```yaml
 ---
-title:
-creator:
-type:
-description:
-image:
-link:
-layout:
+title: Tool Name
+creator: Your Name
+type: Build Tool   # (Options: Build Tool, Addon, Utility, Script)
+description: A short description
+image: /_tools/myTool.png
+link: https://example.com
+layout: false
 ---
 ```
-Note - Type has to be either; 'Build Tool', 'Addon', 'Utility' or 'Script'
-Example - `type: Build Tool`
 
-### Images
-To add an image, navigate to /static/ and then according to what you're adding, include the image there. 
+---
 
-Allowed formats:
+### Step 5: Add images (optional)  
+Place images in the `/static/` folder.  
+
+Allowed formats:  
 ```
-*.png
-*.jpg
-*.webp
+.png, .jpg, .webp
 ```
 
-Example:
+Example for a tool:  
 ```
 /static/_tools/myTool.png
 ```
-## I want to help with the site development.
+
+---
+
+## ⚙️ Contributing to Website Development  
+
+If you want to work on the website code itself (not just content):  
+
 ```sh
-git clone https://github.com/3SA-Research-Development-Unit/website.git # Clone Repository
+git clone https://github.com/3SA-Research-Development-Unit/website.git
 cd website
-npm install # Install Dependencies
-npm run dev # Run Dev
+npm install
+npm run dev
 ```
-
-
-
