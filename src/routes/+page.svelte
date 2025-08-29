@@ -39,7 +39,7 @@
 
 		<!-- Contribute -->
 		<a
-			href="/contribute"
+			href="https://github.com/3SA-Research-Development-Unit/3sa-research-development-unit.github.io"
 			class="group flex flex-col items-center rounded-2xl bg-[var(--nav-bg)] p-8 text-center text-white shadow-md transition hover:bg-red-900"
 		>
 			<div class="mb-3 text-3xl">🤝</div>
@@ -139,7 +139,7 @@
           What is OpFor? OpFor is any non-NATO factions - the "opposing force". <br/><br/>We mostly do Cold War, but have done modern campaigns too. If you are tired of using the same old ACOG to snipe an insurgent from 500 meters away in a desert, we are what you are looking for. We offer a challenge and change. We fight enemies who are equal if not more powerful than us. 
         </p>
         <a 
-          href="https://discord.gg/YOUR_INVITE_HERE"
+          href="https://discord.gg/Jwr7jdx"
           class="inline-block bg-[#7289da] hover:bg-[#424549] transition text-white px-6 py-3 text-lg font-semibold rounded-xl shadow-md"
         >
           Join Our Discord
