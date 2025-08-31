@@ -1,0 +1,70 @@
+backend:
+  name: github
+  repo: 3SA-Research-Development-Unit/3sa-research-development-unit.github.io
+  branch: main # or 'master' if your repo default branch is master
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  # Tools Collection
+  - name: "tools"
+    label: "Tools"
+    folder: "content/tools"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Creator", name: "creator", widget: "string"}
+      - {label: "Type", name: "type", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Link", name: "link", widget: "string"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: false}
+
+  # Projects Collection
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Creator", name: "creator", widget: "string"}
+      - {label: "Type", name: "type", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Workshop Link", name: "workshop_link", widget: "string", required: false}
+      - {label: "GitHub Link", name: "github_link", widget: "string", required: false}
+      - {label: "Dedicated Page", name: "dedicated_page", widget: "string", required: false}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: false}
+
+  # News Collection
+  - name: "news"
+    label: "News"
+    folder: "content/news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Tag", name: "tag", widget: "select", options: ["Update", "Announcement", "Dev Log", "Release", "Spotlight", "Opinion"]}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Thumbnail Type", name: "thumbnail_type", widget: "select", options: ["none", "image", "video"]}
+      - {label: "Thumbnail Link", name: "thumbnail_link", widget: "string", required: false}
+      - {label: "Layout", name: "layout", widget: "hidden", default: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  # Guides Collection
+  - name: "guides"
+    label: "Guides"
+    folder: "content/guides"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Difficulty", name: "difficulty", widget: "select", options: ["Beginner", "Intermediate", "Advanced"], required: false}
+      - {label: "Layout", name: "layout", widget: "hidden", default: false}
+      - {label: "Body", name: "body", widget: "markdown"}

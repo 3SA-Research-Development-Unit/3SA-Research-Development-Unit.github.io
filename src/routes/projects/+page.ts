@@ -1,6 +1,6 @@
 // src/routes/tools/+page.ts
 export async function load() {
-    const things = await import.meta.glob("./_projects/*.svx");
+    const things = await import.meta.glob("$lib/documents/projects/*.svx");
     const projects = await Promise.all(
         Object.entries(things).map(async ([path, resolver]) => {
             const mod: any = await resolver();
