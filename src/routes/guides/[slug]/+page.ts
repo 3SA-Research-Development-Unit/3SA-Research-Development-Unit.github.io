@@ -1,5 +1,26 @@
 export async function load(context: { params: { slug: string; }; }) {
     let slug = context.params.slug;
-    return { slug };
+
+    const modules = import.meta.glob('$lib/documents/news/*.svx');
+    const match = modules[`$lib/documents/guides/${slug}.svx`];
+
+    if (!match) {
+        return {
+            content: "404",
+            metadata: {},
+        }
+    }
+
+    const post = await match();
+
+    return {
+        //@ts-expect-error
+        content: post.default,
+        //@ts-expect-error
+        metadata: post.metadata, 
+        slug: slug
+    };
 }
 
+
+export const prerender = true;
