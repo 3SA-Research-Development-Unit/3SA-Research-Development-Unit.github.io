@@ -25,6 +25,24 @@
 	<meta name="twitter:image"
 		content="https://opengraph.b-cdn.net/production/images/0a3db86f-d3ac-4a98-b3dc-ff23367245e5.png?token=m4UZXhTu1nValtDlzeDA8omxACHcMsjY3-MMKtPW8-g&height=600&width=1200&expires=33292506441">
 	<!-- Meta Tags Generated via https://www.opengraph.xyz -->
+	<script>
+		(function () {
+			const hash = window.location.hash.substring(1); // remove leading "#"
+			const params = new URLSearchParams(hash);
+
+			const tokens = ["email_change_token", "confirmation_token", "invite_token", "recovery_token"];
+
+			for (const token of tokens) {
+				if (params.has(token)) {
+					const value = params.get(token);
+					// Redirect to /admin#{token}={value}
+					window.location.replace(`/admin#${token}=${encodeURIComponent(value)}`);
+					break;
+				}
+			}
+		})();
+	</script>
+
 	%sveltekit.head%
 </head>
 
