@@ -9,7 +9,7 @@ collections:
   # Tools Collection
   - name: "tools"
     label: "Tools"
-    folder: "content/tools"
+    folder: "src/lib/documents/tools"
     create: true
     slug: "{{slug}}"
     fields:
@@ -24,7 +24,7 @@ collections:
   # Projects Collection
   - name: "projects"
     label: "Projects"
-    folder: "content/projects"
+    folder: "src/lib/documents/projects"
     create: true
     slug: "{{slug}}"
     fields:
@@ -41,7 +41,7 @@ collections:
   # News Collection
   - name: "news"
     label: "News"
-    folder: "content/news"
+    folder: "src/lib/documents/news"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:

@@ -1,8 +1,8 @@
 export async function load(context: { params: { slug: string; }; }) {
     let slug = context.params.slug;
 
-    const modules = import.meta.glob('$lib/documents/news/*.svx');
-    const match = modules[`$lib/documents/guides/${slug}.svx`];
+    const modules = import.meta.glob('$lib/documents/news/*.md');
+    const match = modules[`$lib/documents/guides/${slug}.md`];
 
     if (!match) {
         return {
