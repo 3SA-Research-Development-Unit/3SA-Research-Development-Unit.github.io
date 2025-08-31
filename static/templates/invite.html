@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>3SA Panel • Invitation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="margin:0;padding:0;background:#f7f1e1;">
+  <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background:#f7f1e1;">
+    <tr>
+      <td align="center" style="padding:24px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;background:#fff;border:4px solid #a40000;">
+          <tr>
+            <td style="padding:24px 24px 8px 24px; text-align:center;">
+              <img src="https://via.placeholder.com/120x120.png?text=%E2%98%85" width="120" height="120" alt="★ 3SA Emblem" style="display:block;margin:0 auto 12px auto;">
+              <h1 style="margin:0;color:#111;font-family:Georgia, 'Times New Roman', serif;letter-spacing:1px;font-size:28px;text-transform:uppercase;">
+                Invitation to 3SA Panel
+              </h1>
+              <p style="margin:8px 0 0 0;color:#5a0c0c;font-family:Georgia, 'Times New Roman', serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;">
+                Work • Order • Access
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:16px 24px 0 24px;">
+              <p style="margin:0 0 12px 0;color:#111;font-size:16px;line-height:1.5;font-family:Georgia, 'Times New Roman', serif;">
+                You’ve been invited to join the <strong>3SA Panel</strong>. Accept your invitation to enter the command center.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center" style="padding:12px 24px 0 24px;">
+              <!-- Button -->
+              <table role="presentation" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td bgcolor="#a40000" style="border:2px solid #111;">
+                    <a href="{{ .SiteURL }}/admin/#invite_token={{ .Token }}" target="_blank" rel="noopener"
+                       style="display:inline-block;padding:14px 28px;font-family:Georgia, 'Times New Roman', serif;font-size:18px;text-decoration:none;color:#fff;text-transform:uppercase;letter-spacing:1px;"
+                       role="button" aria-label="Accept invitation and open 3SA Panel at 3sa.netlify.app/admin">
+                      Accept Invitation
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:16px 24px 24px 24px;">
+              <p style="margin:12px 0 0 0;color:#333;font-size:14px;line-height:1.6;font-family:Georgia, 'Times New Roman', serif;">
+                If the button doesn’t work, copy and paste this link into your browser:<br>
+                <a href="{{ .SiteURL }}/admin/#invite_token={{ .Token }}" style="color:#a40000;">{{ .SiteURL }}/admin/#invite_token={{ .Token }}</a>
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="background:#a40000;color:#fff;padding:12px 24px;text-align:center;font-family:Georgia, 'Times New Roman', serif;font-size:12px;">
+              © 3SA • Authority through Accessibility
+            </td>
+          </tr>
+        </table>
+
+        <!-- Plain-text fallback -->
+        <div style="display:none;white-space:pre;font-size:0;line-height:0;">Invitation to 3SA Panel. Go to {{ .SiteURL }}/admin/#invite_token={{ .Token }}</div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
