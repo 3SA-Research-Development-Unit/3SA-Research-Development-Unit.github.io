@@ -7,8 +7,8 @@ import path from 'path';
 
 function getSlugs(dir) {
 	return fs.readdirSync(dir)
-		.filter(file => file.endsWith('.svx'))
-		.map(file => file.replace('.svx', ''));
+		.filter(file => file.endsWith('.md'))
+		.map(file => file.replace('.md', ''));
 }
 
 const guideSlugs = getSlugs('./src/lib/documents/guides');
@@ -19,7 +19,9 @@ const newsSlugs = getSlugs('./src/lib/documents/news');
 const config = {
 	// Consult https://svelte.dev/docs/kit/integrations
 	// for more information about preprocessors
-	preprocess: [vitePreprocess(), mdsvex({})],
+	preprocess: [vitePreprocess(), mdsvex({
+		extensions: ['.svx', '.md'],
+	})],
 	kit: {
 		adapter: adapter(), paths: {
 			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
@@ -32,7 +34,7 @@ const config = {
 			]
 		}
 	},
-	extensions: ['.svelte', '.svx']
+	extensions: ['.svelte', '.svx', '.md']
 };
 
 export default config;
