@@ -90,7 +90,7 @@
 					tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros
 					volutpat tempor. In quis arcu et eros porta lobortis sit amet at nunc...
 				</p>
-				<a href="#" class="self-start font-semibold text-[var(--nav-bg)] hover:underline">
+				<a href="/news" class="self-start font-semibold text-[var(--nav-bg)] hover:underline">
 					Read More →
 				</a>
 			</div>

@@ -1,7 +1,6 @@
 backend:
-  name: github
-  repo: 3SA-Research-Development-Unit/3sa-research-development-unit.github.io
-  branch: main # or 'master' if your repo default branch is master
+  name: git-gateway
+  branch: main
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
